@@ -6,7 +6,7 @@ import { FadeIn } from "../FadeIn";
 
 const FEATURED = [
   { title: "PENELOPE 2.0", tag: "MONOLOGO TRAGICOMICO", image: "/teatro.jpg", href: "/lavori" },
-  { title: "HO VISTO NINA VOLARE", tag: "COMPAGNIA VUDISÍ", image: "/bts4.jpg", href: "/lavori" },
+  { title: "HO VISTO NINA VOLARE", tag: "COMPAGNIA VUDISÍ", image: "/ho vistoninavolare.jpeg", href: "/lavori" },
   { title: "OLTRE I MURI", tag: "COMPAGNIA CHANDRAMA", image: "/oltre-i-muri.png", href: "/lavori" },
 ];
 

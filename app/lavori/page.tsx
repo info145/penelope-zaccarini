@@ -5,7 +5,7 @@ export const metadata: Metadata = { title: "Lavori" };
 
 const PROJECTS = [
   { title: "PENELOPE 2.0", role: "Monologo tragicomico — Regia e scrittura", year: "2023–2026", location: "Tour Italia", image: "/teatro.jpg" },
-  { title: "HO VISTO NINA VOLARE", role: "Con la compagnia Vudisí", year: "2022", location: "Italia", image: "/bts4.jpg" },
+  { title: "HO VISTO NINA VOLARE", role: "Con la compagnia Vudisí", year: "2022", location: "Italia", image: "/ho vistoninavolare.jpeg" },
   { title: "OLTRE I MURI", role: "Con la compagnia Chandrama", year: "2022", location: "Italia", image: "/oltre-i-muri.png" },
   { title: "PICCOLE DONNE", role: "Vincitrice bando «A fuoco»", year: "2022", location: "Italia", image: "/bts2.jpg" },
   { title: "MYSTERIES", role: "Collaborazione — Living Theater", year: "In corso", location: "Italia", image: "/hero.jpg" },
