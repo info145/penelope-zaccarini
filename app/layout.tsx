@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
-import { ClientShell } from "@/components/ClientShell";
-import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 const heading = Bebas_Neue({
@@ -41,10 +39,7 @@ export default function RootLayout({
   return (
     <html lang="it" className={`${heading.variable} ${body.variable}`}>
       <body className="min-h-screen bg-[var(--bg-primary)] text-white antialiased">
-        <ClientShell>
-          {children}
-          <Footer />
-        </ClientShell>
+        {children}
       </body>
     </html>
   );

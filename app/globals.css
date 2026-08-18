@@ -22,6 +22,17 @@ html {
   * {
     cursor: none;
   }
+
+  .cursor-native,
+  .cursor-native * {
+    cursor: auto;
+  }
+
+  .cursor-native a,
+  .cursor-native button,
+  .cursor-native [role="button"] {
+    cursor: pointer;
+  }
 }
 
 body {
