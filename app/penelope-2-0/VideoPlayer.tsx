@@ -31,7 +31,7 @@ export function VideoPlayer() {
             sizes="(min-width: 1024px) 960px, 100vw"
           />
           <span className="absolute inset-0 bg-black/30 transition-colors duration-500 group-hover:bg-black/15" />
-          <span className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-[var(--accent)] transition-transform duration-300 group-hover:scale-110">
+          <span className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-[var(--accent)] transition-transform duration-300 group-hover:scale-110 group-active:scale-95 group-active:duration-100">
             <svg
               width="26"
               height="26"

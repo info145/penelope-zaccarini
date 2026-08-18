@@ -43,7 +43,7 @@ export default function Penelope20Page() {
         </p>
 
         <div className="relative z-10 w-full px-6 pb-16 lg:w-1/2 lg:px-16 lg:pb-0">
-          <h1 className="font-display text-[clamp(4.5rem,15vw,12rem)] leading-[0.85] tracking-wide">
+          <h1 className="font-display text-[clamp(4.5rem,15vw,12rem)] leading-[0.85] tracking-normal">
             Penelope <span className="text-[var(--accent)]">2.0</span>
           </h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
