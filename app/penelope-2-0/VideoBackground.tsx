@@ -19,6 +19,11 @@ export function VideoBackground() {
       first.current?.pause();
       return;
     }
+    // React non serializza `muted` nell'HTML: senza, l'autoplay resta bloccato
+    for (const v of [first.current, second.current]) {
+      if (v) v.muted = true;
+    }
+    first.current?.play().catch(() => {});
     const warmup = setTimeout(() => second.current?.load(), 5000);
     return () => clearTimeout(warmup);
   }, []);
@@ -39,6 +44,7 @@ export function VideoBackground() {
       <video
         ref={first}
         src="/penelope-2-0/penelope2.mp4"
+        poster="/penelope-2-0/volto.jpg"
         className={`${VIDEO_CLASS} ${active === 0 ? "opacity-100" : "opacity-0"}`}
         autoPlay
         muted
