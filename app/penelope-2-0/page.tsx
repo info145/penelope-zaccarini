@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Montserrat, Playfair_Display } from "next/font/google";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Reveal } from "./Reveal";
@@ -64,7 +65,7 @@ export default function Penelope20Page() {
             </span>
           </div>
           <a
-            href="https://youtu.be/djd0oY8-2N0"
+            href="https://youtu.be/14ly1j2kHb8"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-9 inline-block px-8 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-black transition-opacity duration-300 hover:opacity-85 active:translate-y-[1px]"
@@ -76,7 +77,17 @@ export default function Penelope20Page() {
       </section>
 
       {/* Lo spettacolo */}
-      <section className="mx-auto max-w-3xl px-6 py-24 md:py-32">
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:py-32 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+        <Reveal className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden lg:max-w-none">
+          <Image
+            src="/penelope-2-0/volto.jpg"
+            alt="Ritratto in bianco e nero di Penelope Zaccarini, mani tra i capelli e sulla bocca, sguardo in camera"
+            fill
+            className="object-cover object-top"
+            sizes="(min-width: 1024px) 40vw, (min-width: 448px) 448px, 100vw"
+          />
+        </Reveal>
+        <div>
         <Reveal>
           <span
             className={`${playfair.className} inline-block bg-white px-4 py-2 text-xl md:text-2xl`}
@@ -119,6 +130,7 @@ export default function Penelope20Page() {
             Dal pubblico, a fine replica
           </p>
         </Reveal>
+        </div>
       </section>
 
       {/* Pagine bianche del dossier: tema, ricerca, informazioni tecniche */}
