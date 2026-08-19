@@ -77,17 +77,7 @@ export default function Penelope20Page() {
       </section>
 
       {/* Lo spettacolo */}
-      <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:py-32 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
-        <Reveal className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden lg:max-w-none">
-          <Image
-            src="/penelope-2-0/volto.jpg"
-            alt="Ritratto in bianco e nero di Penelope Zaccarini, mani tra i capelli e sulla bocca, sguardo in camera"
-            fill
-            className="object-cover object-top"
-            sizes="(min-width: 1024px) 40vw, (min-width: 448px) 448px, 100vw"
-          />
-        </Reveal>
-        <div>
+      <section className="mx-auto max-w-3xl px-6 py-24 md:py-32">
         <Reveal>
           <span
             className={`${playfair.className} inline-block bg-white px-4 py-2 text-xl md:text-2xl`}
@@ -130,12 +120,23 @@ export default function Penelope20Page() {
             Dal pubblico, a fine replica
           </p>
         </Reveal>
-        </div>
       </section>
 
       {/* Pagine bianche del dossier: tema, ricerca, informazioni tecniche */}
       <section className="bg-white text-neutral-900">
-        <div className="mx-auto grid max-w-6xl gap-14 px-6 py-24 md:py-32 lg:grid-cols-2 lg:gap-20">
+        <div className="relative overflow-hidden">
+          <div className="absolute inset-y-0 right-0 w-full lg:w-[55%]">
+            <Image
+              src="/penelope-2-0/volto.jpg"
+              alt=""
+              fill
+              className="object-cover object-top"
+              sizes="(min-width: 1024px) 55vw, 100vw"
+              aria-hidden="true"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/60 lg:via-white/75 lg:to-white/45" />
+          </div>
+        <div className="relative z-10 mx-auto grid max-w-6xl gap-14 px-6 py-24 md:py-32 lg:grid-cols-2 lg:gap-20">
           <div>
             <Reveal>
               <h2 className="text-4xl font-extrabold uppercase leading-tight md:text-5xl">
@@ -151,9 +152,7 @@ export default function Penelope20Page() {
                 <strong style={{ color: ACCENT_DARK }}>Penelope</strong>
                 {" ma trasferendola ai giorni nostri. Su questa falsa traccia l'autrice ne scova e "}
                 <strong style={{ color: ACCENT_DARK }}>distorce</strong>
-                {" i punti chiave, per aprire uno scorcio del tutto nuovo sul"}
-                concetto di attesa ed esplorare i sentimenti a volte
-                contraddittori che abitano l&rsquo;animo umano.
+                {" i punti chiave, per aprire uno scorcio del tutto nuovo sul concetto di attesa ed esplorare i sentimenti a volte contraddittori che abitano l'animo umano."}
               </p>
             </Reveal>
           </div>
@@ -178,6 +177,7 @@ export default function Penelope20Page() {
               </p>
             </Reveal>
           </div>
+        </div>
         </div>
 
         <div className="mx-auto max-w-6xl px-6 pb-24 md:pb-32">
